@@ -1,0 +1,164 @@
+main{
+    margin: 80px auto;
+    width: 580px;
+}
+
+.invisible-section{
+    color: cornflowerblue;
+    font-size: 10px;
+}
+
+#title-section{
+    margin: 50px 0;
+    text-align: center;
+}
+
+input[type=radio]{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid black;
+    outline: none;
+}
+input[type=radio]:checked{
+    background-color: black;
+    border: 3.5px solid white;
+    box-shadow: 0 0 0 0.5px black;
+}
+
+#certification-section div{
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+#certification-section div button{
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+#input-section{
+    margin: 30px 0;
+}
+
+#input-section div{
+    display: flex;
+    flex-direction: column;
+}
+
+#input-section span{
+    margin-top: 8px;
+}
+
+#input-section input{
+    margin: 10px 0;
+    padding: 7px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#address-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#address-section span{
+    margin: 10px 0;
+}
+
+#address-section input{
+    padding: 7px 0;
+}
+
+#first-input-section{
+    display: flex;
+    align-items: center;
+}
+
+#first-input-section button{
+    padding: 5.5px 0;
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+#first-input-section input{
+    width: 100px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0;
+}
+
+#second-input-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#second-input-section input{
+    margin: 7px 0;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#phone-section{
+    margin: 20px 0;
+}
+
+#phone-section div{
+    display: flex;
+    margin: 10px 0;
+}
+
+#phone-section select{
+    flex: 1;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 7px 0;
+}
+
+#phone-section input{
+    flex: 1;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    padding: 7px 0;
+}
+
+#middle-number-input{
+    margin-right: 8px;
+}
+
+#email-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#email-section input{
+    margin: 10px 0;
+    padding: 7px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+#signUp-section{
+    width: 100%;
+    margin: 20px 0;
+}
+
+#signUp-section button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding: 6px 0;
+    cursor: pointer;
+}

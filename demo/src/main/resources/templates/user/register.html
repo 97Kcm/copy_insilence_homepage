@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <title>register</title>
+    <link rel="stylesheet" href="../../static/css/register.css" th:href="@{/css/register.css}">
+    <script src="https://cdn.iamport.kr/v1/iamport.js"></script>
+    <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+    <script src="../../static/js/register.js" th:src="@{/js/register.js}" defer></script>
+</head>
+<body>
+    <main>
+        <form method="POST">
+            <section id="title-section">
+                <span>회원가입</span>
+            </section>
+            <section id="certification-section">
+                <input type="hidden" id="imp-uid">
+                <div>
+                    <input type="radio" checked>
+                    <span>휴대폰인증</span>
+                </div>
+                <div>
+                    <span>휴대폰인증</span>
+                    <button id="certification-button" type="button">휴대폰 인증</button>
+                </div>
+            </section>
+            <section id="input-section">
+                <div>
+                    <span>아이디</span>
+                    <input type="text" name="id" id="id-input">
+                    <span class="invisible-section id"></span>
+                </div>
+                <div>
+                    <span>비밀번호</span>
+                    <input type="password" name="password">
+                    <span class="invisible-section password"></span>
+                </div>
+                <div>
+                    <span>비밀번호 확인</span>
+                    <input type="password">
+                    <span class="invisible-section rePassword"></span>
+                </div>
+            </section>
+            <section id="address-section">
+                <input type="hidden" id="full-address-input" name="address">
+                <span>주소</span>
+                <div id="first-input-section">
+                    <input type="text" id="post-code" placeholder="우편번호" disabled>
+                    <button type="button" id="find-address-btn">주소검색</button>
+                </div>
+                <div id="second-input-section">
+                    <input type="text" id="basic-address" placeholder="기본주소" disabled>
+                    <input type="text" id="extra-address" placeholder="나머지 주소(선택 입력 가능)">
+                </div>
+            </section>
+            <section id="phone-section">
+                <input type="hidden" id="full-phoneNumber-section" name="phoneNumber">
+                <span>휴대전화</span>
+                <div>
+                    <select id="first-number-input">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="017">017</option>
+                        <option value="018">018</option>
+                    </select>
+                    <input id="middle-number-input" type="text">
+                    <input id="last-number-input" type="text">
+                </div>
+            </section>
+            <section id="email-section">
+                <span>이메일</span>
+                <input type="text" name="email">
+            </section>
+            <section id="signUp-section">
+                <button id="signUp-btn">가입하기</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    width: 100%;
+}
+
+footer > section{
+    margin: 0 auto;
+    width: 1480px;
+}
+
+#first-section{
+    font-size: 11px;
+    margin: 50px 0;
+}
+#first-section span:first-child{
+    margin-right: 20px;
+}
+
+#second-section{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+    font-size: 11px;
+}
+
+#second-section span{
+    line-height: 15px;
+}
